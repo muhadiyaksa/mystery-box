@@ -20,7 +20,7 @@ buttonmisteribox.addEventListener("click", () => {
       }
     });
   } else {
-    if (data.join("").toLowerCase() === "as8n") {
+    if (data.join("").toLowerCase() === "as8k") {
       imgmisteribox.classList.remove("bounce");
       imgmisteribox.classList.add("flip");
       console.log(btnmodalCLosed);
@@ -111,7 +111,7 @@ buttonFormChallengeThree.addEventListener("click", function () {
     kataKunciThree.innerHTML = "8";
     formThree.classList.add("d-none");
     ketFormChallengeThree.classList.add("d-none");
-    hiddenButtonTwo.innerHTML = "Challenge Keempat? Kata Kunci = Elemen Pertama";
+    hiddenButtonTwo.innerHTML = "Challenge Keempat? Kata Kunci = Coblos";
     hiddenButtonThree.classList.add("d-none");
     hiddenButtonTwo.classList.remove("d-none");
     hiddenButtonFour.classList.remove("tutup");
@@ -130,7 +130,7 @@ buttonFormChallengeFour.addEventListener("click", () => {
   if (formChallengFour.value !== "") {
     keyChallengeFour.classList.remove("d-none");
     formFour.classList.add("d-none");
-    kataKunciFour.innerHTML = "N";
+    kataKunciFour.innerHTML = "K";
 
     ketFormChallengeFour.classList.add("d-none");
     hiddenButtonTwo.classList.remove("d-none");
