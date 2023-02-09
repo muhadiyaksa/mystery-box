@@ -27,8 +27,8 @@ buttonmisteribox.addEventListener("click", () => {
       setTimeout(() => {
         btnmodalCLosed.click();
       }, 2000);
-      // deskripsiayas.innerHTML = formChallengFour.value;
-      deskripsiayas.innerHTML = "yang nyebelin";
+      deskripsiayas.innerHTML = formChallengFour.value;
+      // deskripsiayas.innerHTML = "yang nyebelin";
     }
   }
 });
