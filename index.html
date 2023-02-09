@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="pendahuluan">
+      <h2><button class="p-0 m-0 fw-bold hiddenFour" data-bs-toggle="modal" data-bs-target="#challangeFour">P</button>ERJALANAN MENUJU MYSTERY BOX</h2>
+      <p>Dibuat Sepenuh Hati Oleh <br /><button class="klikaku disabled border-0 btn p-0 m-0" data-bs-toggle="modal" data-bs-target="#challangeTwo">Muhamad Adi Yaksa</button></p>
+      <button class="btn btn-brown" data-bs-toggle="modal" data-bs-target="#exampleModal">Klik Untuk Baca Aturan</button>
+    </section>
+
+    <section class="box">
+      <h4>Special Mystery Box</h4>
+      <p>special hadiah dari ayas , kalo gabisa buka ya gadapaet hadiah wkwkwk</p>
+      <button class="btn misteribox">
+        <img src="harta.png" alt="" class="bounce" />
+      </button>
+      <p>Kolom Mystery Box</p>
+      <form action="" class="d-flex">
+        <input type="text" class="form-control mx-2 keymisteribox shadow-none text-center py-3 text-capitalize" maxlength="1" />
+        <input type="text" class="form-control mx-2 keymisteribox shadow-none text-center py-3 text-capitalize" maxlength="1" />
+        <input type="text" class="form-control mx-2 keymisteribox shadow-none text-center py-3 text-capitalize" maxlength="1" />
+        <input type="text" class="form-control mx-2 keymisteribox shadow-none text-center py-3 text-capitalize" maxlength="1" />
+      </form>
+      <button class="hiddenThree d-none" data-bs-toggle="modal" data-bs-target="#challangeThree">Hai</button>
+      <p class="mt-4">* Kalo sudah diisi Klik Gambar Harta karunnya</p>
+      <button class="hidden" data-bs-toggle="modal" data-bs-target="#challangeOne"></button>
+      <span class="hiddenTwo border-0 btn btn-light mt-5 d-none" style="font-size: 13px">Challenge Kedua? Kata Kunci = Klik Aku</span>
+      <button class="buttonclosed" id="button-closed " data-bs-toggle="modal" data-bs-target="#closed">ya</button>
+    </section>
+
+    <footer>
+      <p>mangats</p>
+    </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered d-flex justify-content-center text-center position-relative">
+        <img src="image 1.png" alt="" />
+        <div class="modal-body rules position-absolute">
+          <ul>
+            <li>Setiap Kolom harus diisi nilai baik huruf ataupun angka</li>
+            <li>Selesaikan Challenge untuk mendapatkan kunci huruf atau angka apa yang akan diisi tiap kolom</li>
+            <li>Jika semua kunci sudah ditemukan , kamu dapat mengisi di Kolom mystery box untuk melihat kejutann yeayyyy</li>
+            <li>untuk menemukan Challenge pertama , cari sebuah tombol didalam website ini DENGAN TELITI</li>
+          </ul>
+          <button class="btn btn-brown mx-auto" data-bs-dismiss="modal" aria-label="Close">X</button>
+        </div>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+    </div>
+
+    <div class="modal fade" id="challangeOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="formOne">
+              <h2>YEAYYYYYY</h2>
+              <p>Challange Pertama Dimulai</p>
+              <form action="">
+                <input type="text" class="form-control formChallangeOne mb-2" style="font-size: 12px" placeholder="Nama Panjang Ayas?" />
+                <input type="text" class="form-control formChallangeOne mb-2" style="font-size: 12px" placeholder="Kebiasan Ayas? N _ _ _ _ _ G" />
+                <input type="text" class="form-control formChallangeOne mb-2" style="font-size: 12px" placeholder="Kerjaan Ayas? _ _ _ D _ N _" />
+                <input type="text" class="form-control formChallangeOne mb-2" style="font-size: 12px" placeholder="warna kesukaan Ayas? _ _ S _ _ _" />
+              </form>
+              <button class="btn btn-brown buttonFormChallangeOne">Cek Jawaban</button>
+              <span class="text-danger ketFormChallangeOne d-block mt-2 d-none" style="font-size: 12px">Yah Masih Salah</span>
+            </div>
+            <div class="key keyOne d-none">
+              <h3>Kunci Kolom Pertama</h3>
+              <p>Yeayy, lulus</p>
+              <img src="key-.png" alt="" />
+              <h1 class="kataKunciOne"></h1>
+              <span style="font-size: 12px; display: block">Catet, jan lupa</span>
+              <span style="font-size: 12px">Lanjut ke Challenge Kedua</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="challangeTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="formTwo">
+              <h2>Anjay Nemu</h2>
+              <p>Challenge Kedua</p>
+              <img src="kucing1.png" alt="" />
+              <span>Cari Kucing ditumpukan burung hantu</span>
+              <input type="text" class="form-control formChallangeTwo mb-2" style="font-size: 12px" placeholder="Sebutin Warna Kucing Disitu" />
+              <button class="btn btn-brown buttonFormChallangeTwo">Cek Jawaban</button>
+              <span class="text-danger ketFormChallangeTwo d-block mt-2 d-none" style="font-size: 12px">Yah Masih Salah</span>
+            </div>
+            <div class="key keyTwo d-none">
+              <h3>Kunci Kolom Kedua</h3>
+              <p>Anjay Jago</p>
+              <img src="key-.png" alt="" />
+              <h1 class="kataKunciTwo"></h1>
+              <span style="font-size: 12px; display: block">Sisa 2 Kunci Lagi</span>
+              <span style="font-size: 12px">Lanjut ke Challenge Ketiga</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="challangeThree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="formThree">
+              <h2>ANZAYYY</h2>
+              <p>Challenge Ketiga</p>
+              <span>Italy - Inggris</span>
+              <p class="fw-bold">Ti amo</p>
+              <input type="text" class="form-control formChallangeThree mb-2" style="font-size: 12px" placeholder="-" />
+              <button class="btn btn-brown buttonFormChallangeThree">Cek Jawaban</button>
+              <span class="text-danger ketFormChallangeThree d-block mt-2 d-none" style="font-size: 12px">Yah Masih Salah</span>
+            </div>
+            <div class="key keyThree d-none">
+              <h3>Kunci Kolom Ketiga</h3>
+              <p>Idihhh Jimayuu</p>
+              <img src="key-.png" alt="" />
+              <h1 class="kataKunciThree"></h1>
+              <span style="font-size: 12px; display: block">Sisa 1 Kunci Lagi Sodara-sodaraaaaa</span>
+              <span style="font-size: 12px">Lanjut ke Challenge Keempat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="challangeFour" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="formFour">
+              <h2>GILSSSS</h2>
+              <p>Challenge Keempat</p>
+              <p class="fw-bold">Deskripsikan Apapun tentang Ayas</p>
+              <textarea type="text" rows="10" class="form-control formChallangeFour mb-2" style="font-size: 12px" placeholder=""></textarea>
+              <button class="btn btn-brown buttonFormChallangeFour">Kirim Jawaban</button>
+              <span class="text-danger ketFormChallangeFour d-block mt-2 d-none" style="font-size: 12px">Isi Dulu</span>
+            </div>
+            <div class="key keyFour d-none">
+              <h3>Kunci Kolom Keempat</h3>
+              <p>Yeayyy Berhasil...</p>
+              <img src="key-.png" alt="" />
+              <h1 class="kataKunciFour"></h1>
+              <span style="font-size: 12px; display: block">Ingetkan Kunci yang sebelumnya</span>
+              <span style="font-size: 12px">Waktunya Kita buka Mystery Box nya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="closed" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="formFour">
+              <h2>Happy Birthday</h2>
+              <h2>Khairin Rahma Azhiza</h2>
+              <p class="span">Dari Muhamad Adi Yaksa A.K.A Ayas</p>
+              <p class="deskripsiayas"></p>
+
+              <br />
+              <p>
+                Maaf ya aku lupa ngucapin dan ini pun telat, tapi aku berusaha seengganya bikin kamu senyum2 sih, ini btw aku ngerjain semaleman sambil ngerjain case dari kerjaan juga intinya makasih ya diumur kamu yang sekarang kamu mau
+                nemenin aku, jadi tempat curhat, dan ya bisa nerima aku dengan segala kekurangannya
+              </p>
+              <p>Di Ulang tahun kamu yang ke 23 ini semoga makin sukses, apa yang diimpikan tercapai dan selalu bahagiaaaa, jangan kebanyakan overthingking yaaa</p>
+
+              <br />
+              <p>Karna kamu udah baca ini sebagai janjinya Aku akan merencanakan jalan-jalan ke ragunannnn wkwkwk</p>
+              <p>Soalnya klo puncak mager</p>
+              <p>itu ajah sih wkwk intinya love u sayang</p>
+              <button class="btn btn-brown" data-bs-dismiss="modal" aria-label="Close">Tutup</button>
+              <p>jan Lupa Screenshot terus kirim ke aku kalo udah menang</p>
+            </div>
+            <div class="key keyFour d-none">
+              <h3>Kunci Kolom Keempat</h3>
+              <p>Yeayyy Berhasil...</p>
+              <img src="key-.png" alt="" />
+              <h1>2</h1>
+              <span style="font-size: 12px; display: block">Ingetkan Kunci yang sebelumnya</span>
+              <span style="font-size: 12px">Waktunya Kita buka Mystery Box nya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</html>
